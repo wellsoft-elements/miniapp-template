@@ -1,0 +1,30 @@
+{
+  "name": "miniapp-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@headlessui/react": "^2.2.9",
+    "@mui/material": "^7.3.7",
+    "classnames": "^2.5.1",
+    "react": "^19.0.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.7",
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.0.4",
+    "postcss-nested": "^7.0.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.0"
+  }
+}

@@ -1,0 +1,114 @@
+.app {
+  min-height: 100vh;
+  padding: 24px 16px 32px;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 920px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--backgroundWhite);
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--textPrimary);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--textSecondary);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: var(--textPrimary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 165, 57, 0.12);
+}
+
+.inputError {
+  border-color: var(--red);
+}
+
+.error {
+  font-size: 12px;
+  color: var(--red);
+}
+
+.switchBox {
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+}
+
+.status {
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statusLabel {
+  font-size: 12px;
+  color: var(--textSecondary);
+}
+
+.statusValue {
+  font-size: 13px;
+  color: var(--textPrimary);
+  overflow-wrap: anywhere;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toggles {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}

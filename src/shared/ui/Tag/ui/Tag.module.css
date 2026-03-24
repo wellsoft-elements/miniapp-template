@@ -1,0 +1,52 @@
+.tag {
+  --tag-bg: #e0e0e0;
+  --tag-color: var(--textSecondary, #757575);
+  --tag-border: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--tag-border);
+
+  background-color: var(--tag-bg);
+  color: var(--tag-color);
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  will-change: background-color, color, border-color;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.neutral {
+  --tag-bg: #e0e0e0;
+  --tag-border: #e0e0e0;
+  --tag-color: var(--textSecondary, #757575);
+}
+
+.success {
+  --tag-bg: #e8f6ea;
+  --tag-border: #cfe7d4;
+  --tag-color: var(--primary);
+}
+
+.danger {
+  --tag-bg: #fdecec;
+  --tag-border: #f3c4c4;
+  --tag-color: var(--red);
+}
+
+.filled {
+  --tag-border: transparent;
+}
+
+.outline {
+  background-color: transparent;
+  --tag-border: var(--tag-color);
+}

@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: var(--grayText);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.field {
+  resize: none;
+  border: 1px solid #e5e5e5;
+
+  padding: 11px 16px;
+
+  border-radius: 8px;
+
+  color: #212121;
+  font-size: 14px;
+
+  min-height: 96px;
+}
+
+.fieldError {
+  border-color: var(--red);
+}
+
+.errorText {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 12px;
+}

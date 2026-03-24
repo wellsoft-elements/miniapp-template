@@ -1,0 +1,26 @@
+.button {
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--cornerRadius);
+
+  font-weight: 600;
+
+  font-size: 12px;
+
+  width: 100%;
+  padding: 12px;
+
+  &.default {
+    background-color: var(--backgroundGray);
+    color: var(--grayText);
+  }
+
+  &.gradient {
+    color: #fff;
+    background: linear-gradient(90deg, #00a539 0%, #00a175 50%, #009e90 100%);
+  }
+}

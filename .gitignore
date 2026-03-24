@@ -1,0 +1,3 @@
+.tsbuild
+dist
+node_modules
